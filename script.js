@@ -1,9 +1,9 @@
 // ===== Part 1. Task 1: Personal info object =====
 const userProfile = {
-  name: "Madiyar",                                   // string
-  birthYear: 2005,                                   // number
-  isDeveloper: true,                                 // boolean
-  hobbies: ["reading", "sports", "music"]            // array
+  name: "Madiyar",                                   
+  birthYear: 2005,                                   
+  isDeveloper: true,                                 
+  hobbies: ["reading", "sports", "music"]           
 };
 
 console.log("userProfile:", userProfile);
