@@ -7,8 +7,6 @@ const userProfile = {
 };
 
 
-
-
 function calculateAge() {
   const currentYear = 2026;
   return currentYear - userProfile.birthYear;
