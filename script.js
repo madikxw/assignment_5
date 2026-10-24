@@ -50,7 +50,6 @@ profileForm.addEventListener("submit", function (event) {
   showProfile();
 });
 
-=
 const hobbyList = document.getElementById("hobbyList");
 const newItemInput = document.getElementById("newItem");
 
