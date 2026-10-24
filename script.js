@@ -31,9 +31,9 @@ function showProfile() {
   document.getElementById("outMonths").textContent = months;
   document.getElementById("outHobbiesCount").textContent   = hobbiesCount;
 
-  console.log("Age:", age);
-  console.log("Age in months:", months);
-  console.log("Total hobbies:", hobbiesCount);
+  console.log("age:", age);
+  console.log("age in months:", months);
+  console.log("total hobbies:", hobbiesCount);
 }
 
 
