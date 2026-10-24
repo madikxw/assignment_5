@@ -10,7 +10,7 @@ const userProfile = {
 
 
 function calculateAge() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = 2026;
   return currentYear - userProfile.birthYear;
 }
 
@@ -36,7 +36,7 @@ function showProfile() {
   console.log("Total hobbies:", hobbiesCount);
 }
 
-// ===== Part 2. Task 3 and Task 4: Form and event listener =====
+
 const profileForm = document.getElementById("profileForm");
 const usernameInput = document.getElementById("username");
 const birthYearInput = document.getElementById("birthYear");
@@ -50,7 +50,7 @@ profileForm.addEventListener("submit", function (event) {
   showProfile();
 });
 
-// ===== Part 3. Task 5: Creating and removing elements =====
+=
 const hobbyList = document.getElementById("hobbyList");
 const newItemInput = document.getElementById("newItem");
 
