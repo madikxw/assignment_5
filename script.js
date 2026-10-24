@@ -6,7 +6,7 @@ const userProfile = {
   hobbies: ["reading", "sports", "music"]           
 };
 
-console.log("userProfile:", userProfile);
+
 
 // ===== Part 1. Task 2: Arithmetic calculations =====
 function calculateAge() {
@@ -26,10 +26,10 @@ function showProfile() {
   document.getElementById("outName").textContent = userProfile.name;
   document.getElementById("outBirthYear").textContent = userProfile.birthYear;
   document.getElementById("outDeveloper").textContent = userProfile.isDeveloper ? "Yes" : "No";
-  document.getElementById("outHobbies").textContent = userProfile.hobbies.join(", ");
+  document.getElementById("outHobbies").textContent = userProfile.hobbies;
   document.getElementById("outAge").textContent = age;
   document.getElementById("outMonths").textContent = months;
-  document.getElementById("outHobbiesCount").textContent = hobbiesCount;
+  document.getElementById("outHobbiesCount").textContent   = hobbiesCount;
 
   console.log("Age:", age);
   console.log("Age in months:", months);
@@ -42,8 +42,7 @@ const usernameInput = document.getElementById("username");
 const birthYearInput = document.getElementById("birthYear");
 
 profileForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-
+  event.preventDefault(); 
   userProfile.name = usernameInput.value.trim();
   userProfile.birthYear = Number(birthYearInput.value);
 
@@ -68,7 +67,7 @@ document.getElementById("addBtn").addEventListener("click", function () {
   const text = newItemInput.value.trim();
   if (text === "") {
     return;
-  }
+  } 
   addListItem(text);
   userProfile.hobbies.push(text);
   newItemInput.value = "";
