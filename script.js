@@ -1,4 +1,4 @@
-// ===== Part 1. Task 1: Personal info object =====
+
 const userProfile = {
   name: "Madiyar",                                   
   birthYear: 2005,                                   
@@ -8,7 +8,7 @@ const userProfile = {
 
 
 
-// ===== Part 1. Task 2: Arithmetic calculations =====
+
 function calculateAge() {
   const currentYear = new Date().getFullYear();
   return currentYear - userProfile.birthYear;
@@ -60,7 +60,6 @@ function addListItem(text) {
   hobbyList.appendChild(li);
 }
 
-// Fill the list with the hobbies from the object
 userProfile.hobbies.forEach(addListItem);
 
 document.getElementById("addBtn").addEventListener("click", function () {
